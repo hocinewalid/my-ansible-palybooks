@@ -12,7 +12,7 @@
   - name: Get list of pending upgrades
     command: apt-get --simulate dist-upgrade
     args:
-      warn: false # don't warn us about apt having its own plugin
+      warn: false 
     register: apt_simulate
     changed_when: 0
 
